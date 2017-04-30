@@ -23,29 +23,29 @@
     tools:context="com.example.android.miwok.MainActivity">
 
     <TextView
-        android:id="@+id/numbers"
+        android:id="@+id/searchMusic"
         style="@style/CategoryStyle"
         android:background="@color/category_numbers"
-        android:text="@string/category_numbers"
+        android:text="@string/search_music"
         />
 
     <TextView
-        android:id="@+id/family"
+        android:id="@+id/myLibrary"
         style="@style/CategoryStyle"
         android:background="@color/category_family"
-        android:text="@string/category_family"
+        android:text="@string/my_library"
         />
 
     <TextView
-        android:id="@+id/colors"
+        android:id="@+id/nowPlaying"
         style="@style/CategoryStyle"
         android:background="@color/category_colors"
-        android:text="@string/category_colors" />
+        android:text="@string/now_playing" />
 
     <TextView
-        android:id="@+id/phrases"
+        android:id="@+id/myFavourites"
         style="@style/CategoryStyle"
         android:background="@color/category_phrases"
-        android:text="@string/category_phrases" />
+        android:text="@string/my_favourites" />
 
 </LinearLayout>
