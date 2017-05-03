@@ -27,13 +27,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
 
         // Find the View that shows the Search Music page
         TextView searchMusic = (TextView) findViewById(R.id.searchMusic);
 
-// Set a click listener on that View
+// Set a click listener on the Search Music View
         searchMusic.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers View is clicked on.
             @Override
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         // Find the View that shows the My Library category
         TextView myLibrary = (TextView) findViewById(R.id.myLibrary);
 
-// Set a click listener on that View
+// Set a click listener on the Library View
         myLibrary.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers View is clicked on.
             @Override
@@ -60,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         // Find the View that shows the Now Playing category
         TextView nowPlaying = (TextView) findViewById(R.id.nowPlaying);
 
-// Set a click listener on that View
+// Set a click listener on Now Playing View
         nowPlaying.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers View is clicked on.
             @Override
@@ -73,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         // Find the View that shows the My Favourites category
         TextView myFavourites = (TextView) findViewById(R.id.myFavourites);
 
-// Set a click listener on that View
+// Set a click listener on Favourites View
         myFavourites.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers View is clicked on.
             @Override
