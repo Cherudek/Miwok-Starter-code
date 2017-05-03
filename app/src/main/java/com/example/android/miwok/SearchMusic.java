@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
+
 
 public class SearchMusic extends AppCompatActivity {
 
@@ -66,8 +66,8 @@ public class SearchMusic extends AppCompatActivity {
             // The code in this method will be executed when My Library Icon ImageView in the Search Category is clicked on.
             @Override
             public void onClick(View view) {
-                Intent myLibraryIntent = new Intent(SearchMusic.this, MyLibrary.class);
-                startActivity(myLibraryIntent);
+                Intent searchMyLibraryIntent = new Intent(SearchMusic.this, MyLibrary.class);
+                startActivity(searchMyLibraryIntent);
             }
         });
 
