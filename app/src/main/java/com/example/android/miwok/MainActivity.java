@@ -27,59 +27,60 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
 
-        // Find the View that shows the numbers category
-        TextView numbers = (TextView) findViewById(R.id.numbers);
+        // Find the View that shows the Search Music page
+        TextView searchMusic = (TextView) findViewById(R.id.searchMusic);
 
-// Set a click listener on that View
-        numbers.setOnClickListener(new View.OnClickListener() {
+// Set a click listener on the Search Music View
+        searchMusic.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent numbersIntent = new Intent(MainActivity.this, NumbersActivity.class);
-                startActivity(numbersIntent);
+                Intent searchMusicIntent = new Intent(MainActivity.this, SearchMusic.class);
+                startActivity(searchMusicIntent);
             }
         });
 
 
-        // Find the View that shows the family category
-        TextView family = (TextView) findViewById(R.id.family);
+        // Find the View that shows the My Library category
+        TextView myLibrary = (TextView) findViewById(R.id.myLibrary);
 
-// Set a click listener on that View
-        family.setOnClickListener(new View.OnClickListener() {
+// Set a click listener on the Library View
+        myLibrary.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent familyIntent = new Intent(MainActivity.this, FamilyActivity.class);
-                startActivity(familyIntent);
+                Intent myLibraryIntent = new Intent(MainActivity.this, MyLibrary.class);
+                startActivity(myLibraryIntent);
             }
         });
 
-        // Find the View that shows the colors category
-        TextView colors = (TextView) findViewById(R.id.colors);
+        // Find the View that shows the Now Playing category
+        TextView nowPlaying = (TextView) findViewById(R.id.nowPlaying);
 
-// Set a click listener on that View
-        colors.setOnClickListener(new View.OnClickListener() {
+// Set a click listener on Now Playing View
+        nowPlaying.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent colorsIntent = new Intent(MainActivity.this, ColorsActivity.class);
-                startActivity(colorsIntent);
+                Intent nowPlayingIntent = new Intent(MainActivity.this, NowPlaying.class);
+                startActivity(nowPlayingIntent);
             }
         });
 
-        // Find the View that shows the phrases category
-        TextView phrases = (TextView) findViewById(R.id.phrases);
+        // Find the View that shows the My Favourites category
+        TextView myFavourites = (TextView) findViewById(R.id.myFavourites);
 
-// Set a click listener on that View
-        phrases.setOnClickListener(new View.OnClickListener() {
+// Set a click listener on Favourites View
+        myFavourites.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent phrasesIntent = new Intent(MainActivity.this, PhrasesActivity.class);
-                startActivity(phrasesIntent);
+                Intent myFavouritesIntent = new Intent(MainActivity.this, MyFavourites.class);
+                startActivity(myFavouritesIntent);
             }
         });
 

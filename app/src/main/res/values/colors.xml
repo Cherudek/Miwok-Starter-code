@@ -14,6 +14,10 @@
      limitations under the License.
 -->
 <resources>
+    <!-- White color of the app (shown in the app bar) -->
+    <color name="white">#FFFFFF</color>
+
+
     <!-- Primary color of the app (shown in the app bar) -->
     <color name="primary_color">#4A312A</color>
 
@@ -23,15 +27,15 @@
     <!-- Background color for app -->
     <color name="tan_background">#FFF7DA</color>
 
-    <!-- Background color for the numbers category -->
-    <color name="category_numbers">#FD8E09</color>
+    <!-- Background color for the Search category -->
+    <color name="category_search">#FD8E09</color>
 
     <!-- Background color for the family members category -->
-    <color name="category_family">#379237</color>
+    <color name="category_library">#379237</color>
 
     <!-- Background color for the colors category -->
-    <color name="category_colors">#8800A0</color>
+    <color name="category_playing">#8800A0</color>
 
     <!-- Background color for the phrases category -->
-    <color name="category_phrases">#16AFCA</color>
+    <color name="category_favourites">#16AFCA</color>
 </resources>

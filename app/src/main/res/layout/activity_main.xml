@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2016 The Android Open Source Project
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2016 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,8 +12,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -22,30 +20,102 @@
     android:orientation="vertical"
     tools:context="com.example.android.miwok.MainActivity">
 
-    <TextView
-        android:id="@+id/numbers"
-        style="@style/CategoryStyle"
-        android:background="@color/category_numbers"
-        android:text="@string/category_numbers"
-        />
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
 
-    <TextView
-        android:id="@+id/family"
-        style="@style/CategoryStyle"
-        android:background="@color/category_family"
-        android:text="@string/category_family"
-        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/category_search">
 
-    <TextView
-        android:id="@+id/colors"
-        style="@style/CategoryStyle"
-        android:background="@color/category_colors"
-        android:text="@string/category_colors" />
+            <ImageView
+                style="@style/icons"
+                android:src="@drawable/ic_search_white_24dp"/>
 
-    <TextView
-        android:id="@+id/phrases"
-        style="@style/CategoryStyle"
-        android:background="@color/category_phrases"
-        android:text="@string/category_phrases" />
+            <TextView
+                android:id="@+id/searchMusic"
+                style="@style/CategoryStyle"
+                android:background="@color/category_search"
+                android:text="@string/search_music" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/category_library">
+
+            <ImageView
+                style="@style/icons"
+                android:src="@drawable/ic_library_music_white_24dp"/>
+
+            <TextView
+                android:id="@+id/myLibrary"
+                style="@style/CategoryStyle"
+                android:background="@color/category_library"
+                android:text="@string/my_library" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/category_playing">
+
+            <ImageView
+                style="@style/icons"
+                android:src="@drawable/ic_play_arrow_white_24dp"/>
+
+            <TextView
+                android:id="@+id/nowPlaying"
+                style="@style/CategoryStyle"
+                android:background="@color/category_playing"
+                android:text="@string/now_playing" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/category_favourites">
+
+            <ImageView
+                style="@style/icons"
+                android:src="@drawable/ic_favorite_white_24dp"/>
+
+            <TextView
+                android:id="@+id/myFavourites"
+                style="@style/CategoryStyle"
+                android:background="@color/category_favourites"
+                android:text="@string/my_favourites" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
 
 </LinearLayout>

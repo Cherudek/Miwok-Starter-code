@@ -29,14 +29,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NumbersActivity"
-                  android:label="@string/category_numbers"/>
-        <activity android:name=".FamilyActivity"
-                  android:label="@string/category_family"/>
-        <activity android:name=".PhrasesActivity"
-                  android:label="@string/category_phrases"/>
-        <activity android:name=".ColorsActivity"
-                  android:label="@string/category_colors"></activity>
+        <activity
+            android:name=".SearchMusic"
+            android:label="@string/search_music" />
+        <activity android:name=".MyLibrary"
+            android:label="@string/my_library"/>
+        <activity android:name=".NowPlaying"
+            android:label="@string/now_playing"/>
+        <activity android:name=".MyFavourites"
+            android:label="@string/my_favourites"></activity>
     </application>
 
 </manifest>
