@@ -14,6 +14,7 @@
 
 
 -->
+<!--  Scroll View of the Landing Page   -->
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
@@ -28,6 +29,8 @@
     android:background="@color/tan_background"
     android:orientation="vertical"
     tools:context="com.example.android.miwok.MainActivity">
+
+    <!--  Search Music Card View   -->
 
     <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
@@ -54,6 +57,8 @@
 
     </android.support.v7.widget.CardView>
 
+    <!--  My Library Card View   -->
+
     <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -79,6 +84,8 @@
 
     </android.support.v7.widget.CardView>
 
+    <!--  Now Playing Song Card View   -->
+
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -101,6 +108,8 @@
                 android:text="@string/now_playing" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
+
+    <!--  My Favourites Songs / Albums Card View   -->
 
 
     <android.support.v7.widget.CardView
@@ -125,7 +134,32 @@
                 android:text="@string/my_favourites" />
 
         </LinearLayout>
+
+
     </android.support.v7.widget.CardView>
+
+    <!--  Activity Description  Card View   -->
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/music_sturcture_intro"
+            android:padding="6dp"
+            android:layout_margin="6dp"
+            android:textColor="@color/primary_dark_color"
+            />
+
+        </android.support.v7.widget.CardView>
+
+
+
+
 
 </LinearLayout>
 </ScrollView>

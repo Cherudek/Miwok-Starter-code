@@ -11,7 +11,8 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@color/category_favourites"
-        >
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp">
 
 
 
@@ -52,7 +53,7 @@
                     android:textColor="@color/primary_dark_color" />
             </LinearLayout>
 
-            <!-- Favourites Icon Layout -->
+            <!-- Search Icon Layout -->
 
             <LinearLayout
                 android:layout_width="0dp"

@@ -32,12 +32,16 @@
         <activity
             android:name=".SearchMusic"
             android:label="@string/search_music" />
+        <activity android:name=".logIn"
+            android:label="@string/logIn"/>
         <activity android:name=".MyLibrary"
             android:label="@string/my_library"/>
         <activity android:name=".NowPlaying"
             android:label="@string/now_playing"/>
         <activity android:name=".MyFavourites"
-            android:label="@string/my_favourites"></activity>
+            android:label="@string/my_favourites">
+
+        </activity>
     </application>
 
 </manifest>
