@@ -29,7 +29,9 @@
     <string name="my_favourites"> Favourites</string>
     <string name="music_sturcture_intro">This app would like to make use of a Spotify API to fetch data in the JSON format and Search for Music and Artist. It should fetch data from the user Spotify account. There is a page with the now playing song and an activity where to save our favourite songs.</string>
     <string name="logIn">Log In</string>
-    <string name="search_descriprtion">Search will look for Artist or Song names over the Spotify API and will return Data in JSON format listing the results in the card views belos the Search entry</string>
+    <string name="search_description">Search will look for Artist or Song names over the Spotify API and will return Data in JSON format listing the results in the card views belos the Search entry</string>
     <string name="nowPlayingDescription">this screen will show the album cover and the Track and artist info plus controls to skip play stop the song.</string>
+    <string name="favourite_description">This activity should contain favourites albums and songs chosen from the user when clicking the heart icon form the Now Playing Activity</string>
+    <string name="my_library_description">My Library will fetch data from Spotify API and return JSON format data to fill the Library divided in Albums and Artists</string>
 
 </resources>

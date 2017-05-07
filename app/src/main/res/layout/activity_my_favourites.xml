@@ -14,6 +14,26 @@
         tools:layout_editor_absoluteY="0dp"
         tools:layout_editor_absoluteX="0dp">
 
+        <!--  Activity Description  Card View   -->
+
+
+        <android.support.v7.widget.CardView
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/favourite_description"
+                android:padding="6dp"
+                android:layout_margin="6dp"
+                android:textColor="@color/primary_dark_color"
+                />
+
+        </android.support.v7.widget.CardView>
+
 
 
         <!-- Navigation Icons  Layout -->
