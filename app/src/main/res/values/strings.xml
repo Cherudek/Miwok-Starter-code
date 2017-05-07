@@ -33,5 +33,9 @@
     <string name="nowPlayingDescription">this screen will show the album cover and the Track and artist info plus controls to skip play stop the song.</string>
     <string name="favourite_description">This activity should contain favourites albums and songs chosen from the user when clicking the heart icon form the Now Playing Activity</string>
     <string name="my_library_description">My Library will fetch data from Spotify API and return JSON format data to fill the Library divided in Albums and Artists</string>
+    <string name="login">LOGIN</string>
+    <string name="password">Password</string>
+    <string name="user_name">User Name</string>
+    <string name="email">Email</string>
 
 </resources>

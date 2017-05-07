@@ -13,153 +13,147 @@
      limitations under the License.
 
 
--->
-<!--  Scroll View of the Landing Page   -->
+--><!--  Scroll View of the Landing Page   -->
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/tan_background"
-    android:orientation="vertical"
-    tools:context="com.example.android.miwok.MainActivity">
-
-    <!--  Search Music Card View   -->
-
-    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp">
+        android:background="@color/tan_background"
+        android:orientation="vertical"
+        tools:context="com.example.android.miwok.MainActivity">
 
-        <LinearLayout
+        <!--  Search Music Card View   -->
+
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@color/category_search">
+            android:layout_marginBottom="8dp">
 
-            <ImageView
-                style="@style/icons"
-                android:src="@drawable/ic_search_white_24dp"/>
-
-            <TextView
-                android:id="@+id/searchMusic"
-                style="@style/CategoryStyle"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:background="@color/category_search"
-                android:text="@string/search_music" />
+                android:orientation="horizontal">
 
-        </LinearLayout>
+                <ImageView
+                    style="@style/icons"
+                    android:src="@drawable/ic_search_white_24dp" />
 
-    </android.support.v7.widget.CardView>
+                <TextView
+                    android:id="@+id/searchMusic"
+                    style="@style/CategoryStyle"
+                    android:background="@color/category_search"
+                    android:text="@string/search_music" />
 
-    <!--  My Library Card View   -->
+            </LinearLayout>
 
-    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp">
+        </android.support.v7.widget.CardView>
 
-        <LinearLayout
+        <!--  My Library Card View   -->
+
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@color/category_library">
+            android:layout_marginBottom="8dp">
 
-            <ImageView
-                style="@style/icons"
-                android:src="@drawable/ic_library_music_white_24dp"/>
-
-            <TextView
-                android:id="@+id/myLibrary"
-                style="@style/CategoryStyle"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:background="@color/category_library"
-                android:text="@string/my_library" />
+                android:orientation="horizontal">
 
-        </LinearLayout>
+                <ImageView
+                    style="@style/icons"
+                    android:src="@drawable/ic_library_music_white_24dp" />
 
-    </android.support.v7.widget.CardView>
+                <TextView
+                    android:id="@+id/myLibrary"
+                    style="@style/CategoryStyle"
+                    android:background="@color/category_library"
+                    android:text="@string/my_library" />
 
-    <!--  Now Playing Song Card View   -->
+            </LinearLayout>
 
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp">
+        </android.support.v7.widget.CardView>
 
-        <LinearLayout
+        <!--  Now Playing Song Card View   -->
+
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@color/category_playing">
+            android:layout_marginBottom="8dp">
 
-            <ImageView
-                style="@style/icons"
-                android:src="@drawable/ic_play_arrow_white_24dp"/>
-
-            <TextView
-                android:id="@+id/nowPlaying"
-                style="@style/CategoryStyle"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:background="@color/category_playing"
-                android:text="@string/now_playing" />
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
+                android:orientation="horizontal">
 
-    <!--  My Favourites Songs / Albums Card View   -->
+                <ImageView
+                    style="@style/icons"
+                    android:src="@drawable/ic_play_arrow_white_24dp" />
+
+                <TextView
+                    android:id="@+id/nowPlaying"
+                    style="@style/CategoryStyle"
+                    android:background="@color/category_playing"
+                    android:text="@string/now_playing" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!--  My Favourites Songs / Albums Card View   -->
 
 
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp">
-
-        <LinearLayout
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@color/category_favourites">
+            android:layout_marginBottom="8dp">
 
-            <ImageView
-                style="@style/icons"
-                android:src="@drawable/ic_favorite_white_24dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/category_favourites"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/icons"
+                    android:src="@drawable/ic_favorite_white_24dp" />
+
+                <TextView
+                    android:id="@+id/myFavourites"
+                    style="@style/CategoryStyle"
+                    android:background="@color/category_favourites"
+                    android:text="@string/my_favourites" />
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <!--  Activity Description  Card View   -->
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
 
             <TextView
-                android:id="@+id/myFavourites"
-                style="@style/CategoryStyle"
-                android:background="@color/category_favourites"
-                android:text="@string/my_favourites" />
-
-        </LinearLayout>
-
-
-    </android.support.v7.widget.CardView>
-
-    <!--  Activity Description  Card View   -->
-
-
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/music_sturcture_intro"
-            android:padding="6dp"
-            android:layout_margin="6dp"
-            android:textColor="@color/primary_dark_color"
-            />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:padding="6dp"
+                android:text="@string/music_sturcture_intro"
+                android:textColor="@color/primary_dark_color" />
 
         </android.support.v7.widget.CardView>
 
 
-
-
-
-</LinearLayout>
+    </LinearLayout>
 </ScrollView>

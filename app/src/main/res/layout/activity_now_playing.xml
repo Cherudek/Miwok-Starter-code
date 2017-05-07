@@ -19,152 +19,152 @@
         <!-- Functionality Description -->
 
         <android.support.v7.widget.CardView
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
+            android:id="@+id/playingCard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:id="@+id/playingCard">
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="8dp">
 
             <TextView
-                android:padding="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="8dp"
                 android:text="@string/nowPlayingDescription"
-                android:textColor="@color/primary_dark_color"/>
+                android:textColor="@color/primary_dark_color" />
 
         </android.support.v7.widget.CardView>
 
+        <!-- Placeholder Image for Player Functionality -->
 
         <android.support.v7.widget.CardView
-            android:layout_above="@+id/nowPlayingControls"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_above="@+id/nowPlayingControls"
             android:layout_below="@+id/playingCard">
 
             <ImageView
-                android:background="@color/category_playing"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/nowplaying"
-                />
+                android:background="@color/category_playing"
+                android:src="@drawable/nowplaying" />
 
         </android.support.v7.widget.CardView>
 
-    <!-- Navigation Icons  Layout -->
-
-    <LinearLayout
-        android:id="@+id/nowPlayingControls"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="12dp"
-        android:layout_weight="1"
-        android:gravity="bottom"
-        android:orientation="horizontal"
-        android:weightSum="4">
-
-
-        <!-- Home Icon Layout -->
+        <!-- Navigation Icons  Layout -->
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:id="@+id/nowPlayingControls"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:weightSum="4">
 
-            <ImageView
-                android:id="@+id/playingHomeIcon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_home_black_24dp" />
 
-            <TextView
-                android:id="@+id/searchHome"
-                android:layout_width="wrap_content"
+            <!-- Home Icon Layout -->
+
+            <LinearLayout
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Home"
-                android:textColor="@color/primary_dark_color" />
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/playingHomeIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_home_black_24dp" />
+
+                <TextView
+                    android:id="@+id/searchHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Home"
+                    android:textColor="@color/primary_dark_color" />
+            </LinearLayout>
+
+            <!-- Favourites Icon Layout -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/playingFavouritesIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_favorite_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Favourites"
+                    android:textColor="@color/primary_dark_color" />
+
+            </LinearLayout>
+
+            <!-- Search Icon Layout -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/playingSearchIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_search_black_24dp" />
+
+                <TextView
+                    android:id="@+id/nowPlayingSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Search"
+                    android:textColor="@color/primary_dark_color" />
+
+
+            </LinearLayout>
+
+            <!-- Library Icon Layout -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/playinLibraryIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_library_music_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Library"
+                    android:textColor="@color/primary_dark_color" />
+            </LinearLayout>
+
+
         </LinearLayout>
-
-        <!-- Favourites Icon Layout -->
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/playingFavouritesIcon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_favorite_black_24dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Favourites"
-                android:textColor="@color/primary_dark_color" />
-
-        </LinearLayout>
-
-        <!-- Search Icon Layout -->
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/playingSearchIcon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_search_black_24dp" />
-
-            <TextView
-                android:id="@+id/nowPlayingSearch"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Search"
-                android:textColor="@color/primary_dark_color" />
-
-
-        </LinearLayout>
-
-        <!-- Library Icon Layout -->
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/playinLibraryIcon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_library_music_black_24dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Library"
-                android:textColor="@color/primary_dark_color" />
-        </LinearLayout>
-
-
-    </LinearLayout>
-</RelativeLayout>
-    </android.support.constraint.ConstraintLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
 
 
