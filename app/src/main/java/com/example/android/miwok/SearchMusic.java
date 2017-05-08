@@ -27,6 +27,7 @@ public class SearchMusic extends AppCompatActivity {
             public void onClick(View view) {
                 Intent myHomeIntent = new Intent(SearchMusic.this, MainActivity.class);
                 startActivity(myHomeIntent);
+                finish();
             }
         });
 
@@ -41,6 +42,7 @@ public class SearchMusic extends AppCompatActivity {
             public void onClick(View view) {
                 Intent myFavouritesIntent = new Intent(SearchMusic.this, MyFavourites.class);
                 startActivity(myFavouritesIntent);
+                finish();
             }
         });
 
@@ -54,6 +56,7 @@ public class SearchMusic extends AppCompatActivity {
             public void onClick(View view) {
                 Intent nowPlayingIntent = new Intent(SearchMusic.this, NowPlaying.class);
                 startActivity(nowPlayingIntent);
+                finish();
             }
         });
 
@@ -68,6 +71,7 @@ public class SearchMusic extends AppCompatActivity {
             public void onClick(View view) {
                 Intent searchMyLibraryIntent = new Intent(SearchMusic.this, MyLibrary.class);
                 startActivity(searchMyLibraryIntent);
+                finish();
             }
         });
 

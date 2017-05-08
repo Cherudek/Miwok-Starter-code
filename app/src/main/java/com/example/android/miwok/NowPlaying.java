@@ -45,6 +45,7 @@ public class NowPlaying extends AppCompatActivity {
             public void onClick(View view)  {
                 Intent nowPlayingHomeIntent = new Intent (NowPlaying.this, MainActivity.class);
                 startActivity(nowPlayingHomeIntent);
+                finish();
             }
         });
 
@@ -60,6 +61,7 @@ public class NowPlaying extends AppCompatActivity {
             public void onClick(View view)  {
                 Intent nowPlayingFavouritesIntent = new Intent (NowPlaying.this, MyFavourites.class);
                 startActivity(nowPlayingFavouritesIntent);
+                finish();
             }
         });
 
@@ -74,6 +76,7 @@ public class NowPlaying extends AppCompatActivity {
             public void onClick(View view)  {
                 Intent nowPlayingSearchIntent = new Intent (NowPlaying.this, SearchMusic.class);
                 startActivity(nowPlayingSearchIntent);
+                finish();
             }
         });
 
@@ -89,6 +92,7 @@ public class NowPlaying extends AppCompatActivity {
             public void onClick(View view)  {
                 Intent nowPlayingLibraryIntent = new Intent (NowPlaying.this, MyLibrary.class);
                 startActivity(nowPlayingLibraryIntent);
+                finish();
             }
         });
 
