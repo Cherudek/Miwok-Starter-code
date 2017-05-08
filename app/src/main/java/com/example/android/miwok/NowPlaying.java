@@ -6,6 +6,25 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+// We will need to import the Spotify Library for the Music Player
+
+// https://spotify.github.io/android-sdk/player/
+
+/*import com.spotify.sdk.android.player.Config;
+import com.spotify.sdk.android.player.ConnectionStateCallback;
+import com.spotify.sdk.android.player.Connectivity;
+import com.spotify.sdk.android.player.Error;
+import com.spotify.sdk.android.player.Metadata;
+import com.spotify.sdk.android.player.PlaybackBitrate;
+import com.spotify.sdk.android.player.PlaybackState;
+import com.spotify.sdk.android.player.Player;
+import com.spotify.sdk.android.player.PlayerEvent;
+import com.spotify.sdk.android.player.Spotify;
+import com.spotify.sdk.android.player.SpotifyPlayer;*/
+
+
+
+
 public class NowPlaying extends AppCompatActivity {
 
     @Override
