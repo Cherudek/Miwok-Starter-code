@@ -27,6 +27,7 @@ public class MyLibrary extends AppCompatActivity {
             public void onClick(View view) {
                 Intent myLibraryHomeIntent = new Intent(MyLibrary.this, MainActivity.class);
                 startActivity(myLibraryHomeIntent);
+                finish();
             }
         });
 
@@ -41,6 +42,7 @@ public class MyLibrary extends AppCompatActivity {
             public void onClick(View view) {
                 Intent myLibraryFavouritesIntent = new Intent(MyLibrary.this, MyFavourites.class);
                 startActivity(myLibraryFavouritesIntent);
+                finish();
             }
         });
 
@@ -54,6 +56,7 @@ public class MyLibrary extends AppCompatActivity {
             public void onClick(View view) {
                 Intent myLibraryNowPlayingIntent = new Intent(MyLibrary.this, NowPlaying.class);
                 startActivity(myLibraryNowPlayingIntent);
+                finish();
             }
         });
 
@@ -67,6 +70,7 @@ public class MyLibrary extends AppCompatActivity {
             public void onClick(View view) {
                 Intent myLibrarySearchIntent = new Intent(MyLibrary.this, SearchMusic.class);
                 startActivity(myLibrarySearchIntent);
+                finish();
             }
         });
 

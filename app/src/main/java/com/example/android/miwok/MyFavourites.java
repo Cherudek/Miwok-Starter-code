@@ -28,6 +28,7 @@ public class MyFavourites extends AppCompatActivity {
             public void onClick(View view) {
                 Intent favouritesHomeIntent = new Intent(MyFavourites.this, MainActivity.class);
                 startActivity(favouritesHomeIntent);
+                finish();
             }
         });
 
@@ -44,6 +45,7 @@ public class MyFavourites extends AppCompatActivity {
             public void onClick(View view) {
                 Intent favouritesSearchIntent = new Intent(MyFavourites.this, SearchMusic.class);
                 startActivity(favouritesSearchIntent);
+                finish();
             }
         });
 
@@ -59,6 +61,7 @@ public class MyFavourites extends AppCompatActivity {
             public void onClick(View view) {
                 Intent favouritesPlayingIntent = new Intent(MyFavourites.this, NowPlaying.class);
                 startActivity(favouritesPlayingIntent);
+                finish();
             }
         });
 
@@ -73,6 +76,7 @@ public class MyFavourites extends AppCompatActivity {
             public void onClick(View view) {
                 Intent favouritesLibraryIntent = new Intent(MyFavourites.this, MyLibrary.class);
                 startActivity(favouritesLibraryIntent);
+                finish();
             }
         });
 
